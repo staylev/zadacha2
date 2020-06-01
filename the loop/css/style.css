@@ -1,0 +1,364 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=cyrillic");
+.body {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* Шапка сайта*/
+.header {
+  background-color: #F9F6F1;
+}
+
+/* Меню навигации */
+.menu {
+  padding-top: 60px;
+}
+
+.menu__brand {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu__brand a {
+  font-weight: 700;
+}
+
+.menu__brand img {
+  margin-right: 10px;
+}
+
+.menu__toogler {
+  z-index: 10;
+}
+
+.menu__toogler:focus {
+  outline: none;
+}
+
+.menu__link {
+  font-weight: 500;
+  color: #212121 !important;
+}
+
+.menu__purchase-count {
+  color: white;
+  text-shadow: black 0 0 2px;
+  margin-left: -20px;
+}
+
+.menu__shopping-basket {
+  margin-top: -7px;
+}
+
+/* Слайдер */
+.slider {
+  background-color: #F9F6F1;
+  padding-top: 140px;
+  padding-bottom: 200px;
+}
+
+.slider__buttons {
+  bottom: -100px;
+}
+
+.slider__buttons li {
+  background-color: #CECECE;
+  border: 1px solid black;
+  opacity: 1;
+  width: 40px;
+  height: 7px;
+}
+
+.slider__buttons li.active {
+  background-color: #D7B399;
+}
+
+.slider__image {
+  margin-left: auto;
+}
+
+.slider__caption {
+  color: #212121 !important;
+  left: 0;
+  right: 50%;
+  text-align: left;
+}
+
+.slider__caption-title {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.slider__caption-description {
+  font-size: 55px;
+  font-weight: 700;
+}
+
+.slider__control-prev {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
+}
+
+.slider__control-next {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23CECECE' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+/* Объявления */
+.declaration {
+  padding: 70px 0;
+  background-color: #212121 !important;
+}
+
+.declaration__title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.declaration__price {
+  font-weight: 400;
+}
+
+.declaration__text {
+  color: #E5E5E5;
+  text-align: center;
+  font-weight: 300;
+  font-size: 21px;
+}
+
+/* Категории */
+.category__section {
+  text-align: left;
+  height: 260px;
+  padding-left: 20px;
+}
+
+.category__section-man {
+  background-color: #F9F6F1;
+}
+
+.category__section-woman {
+  background-color: #F4F4F4;
+}
+
+.category__title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+.category__span {
+  font-weight: 300;
+}
+
+.category__caption {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.category_link {
+  background-color: #D7B399;
+  color: white;
+  display: block;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+}
+
+.category_link:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.category_link:hover .category_link-arrow {
+  -webkit-transform: scaleX(1.5) translateX(3px);
+          transform: scaleX(1.5) translateX(3px);
+}
+
+.category_link-arrow {
+  margin-top: 7px;
+  font-size: 1.2em;
+}
+
+.category__image {
+  position: absolute;
+  right: 15px;
+  bottom: 0;
+}
+
+.category__models {
+  margin-top: 10px;
+}
+
+.category__model {
+  max-width: 280px;
+  margin-bottom: 10px;
+}
+
+.category__model-caption {
+  position: absolute;
+  left: 25px;
+  bottom: 0;
+  font-size: 21px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+/* Форма подписки */
+.subscription {
+  background-color: #212121 !important;
+  padding: 70px 0;
+}
+
+.subscription__title {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.subscription__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subscription__mail {
+  width: 100%;
+  padding: 10px 15px;
+  color: #E5E5E5;
+}
+
+.subscription__button {
+  padding: 10px 35px;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  background-color: #D7B399;
+  border: none;
+  margin-left: 35px;
+}
+
+/* Модели товаров */
+.models {
+  margin: 150px 0;
+  text-align: center;
+}
+
+.models__title {
+  width: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.models__list {
+  margin: 100px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.models__description {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 0;
+}
+
+.models__price {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #D7B399;
+  margin-bottom: 0;
+}
+
+.models__portrait {
+  max-width: 200px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.models__caption {
+  padding-top: 20px;
+}
+
+.models__portrait:before, .models__portrait:after, .models__caption:before, .models__caption:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.models__portrait:before {
+  top: 0;
+  left: 0;
+  border-top: 3px solid #D7B399;
+  border-left: 3px solid #D7B399;
+}
+
+.models__portrait:after {
+  top: 0;
+  right: 0;
+  border-top: 3px solid #D7B399;
+  border-right: 3px solid #D7B399;
+}
+
+.models__caption:before {
+  bottom: 0;
+  left: 0;
+  border-bottom: 3px solid #D7B399;
+  border-left: 3px solid #D7B399;
+}
+
+.models__caption:after {
+  bottom: 0;
+  right: 0;
+  border-bottom: 3px solid #D7B399;
+  border-right: 3px solid #D7B399;
+}
+
+.models__bottom {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.models__button {
+  background-color: #D7B399;
+  color: white;
+  padding: 20px;
+}
+
+.models__button:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.models__button:hover .models__button-arrow {
+  -webkit-transform: scaleX(1.5) translateX(3px);
+          transform: scaleX(1.5) translateX(3px);
+}
+
+.models__button-arrow {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+/ 
+}
